@@ -1,0 +1,49 @@
+body {
+  background: #352f5b;
+}
+.container {
+  max-width: 400px;
+}
+input[type="text"],
+input[type="text"]:focus {
+  color: #fff;
+  border: none;
+  background: rgba(0, 0, 0, 0.082);
+  max-width: 400px;
+}
+.todos li {
+  background: #423a6f;
+  color: #fff;
+  border: none;
+}
+.delete {
+  cursor: pointer;
+}
+::-webkit-input-placeholder {
+  color: #fff !important;
+  opacity: 1;
+  text-align: center;
+}
+.filtered {
+  display: none !important;
+}
+span {
+  cursor: pointer;
+}
+.todos li span.completed {
+  background: #b6b6b6;
+  color: #fff;
+  text-decoration: line-through;
+}
+.todos li span.completed::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
